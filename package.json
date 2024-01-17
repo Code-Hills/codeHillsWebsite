@@ -1,0 +1,21 @@
+{
+    "name": "codehills-website",
+    "version": "1.0.0",
+    "description": "This is the trial business website for Codehills.",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "lite-server",
+        "sass": "node-sass src/sass/main.scss dist/assets/styles/main.css -w"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "lite-server": "^2.6.1",
+        "node-sass": "^9.0.0"
+    },
+    "directories": {
+        "src": "src",
+        "dist": "dist"
+    }
+}

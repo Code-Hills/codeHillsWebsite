@@ -8,6 +8,12 @@
     border-bottom: 1px solid $color-white;
     overflow: hidden;
 
+    &__logo {
+        display: inline-block;
+        height: 30px;
+        width: 226px;
+    }
+
     &__navigation {
         display: flex;
         align-items: center;

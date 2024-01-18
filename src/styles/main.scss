@@ -1,16 +1,122 @@
 /* src/sass/main.scss */
 
+
+/* fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import './variables';
 @import './typography';
 @import './utilities';
 @import './header';
 @import './hero-banner';
+@import './support';
+
+/* Styles */
+
+
+/* Presets */
+
+$title-color: #FFFFFF;
+$text-color: #000000;
+$blue-color: #AACEDE;
+$orange-color: #ED8E00;
+$font-family-default: 'Montserrat',
+sans-serif;
 
 /* Styles */
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: $color-white;
+    background-color: $title-color;
+}
+
+h1 {
+    font-family: $font-family-default;
+    line-height: 121.9px;
+    color: $title-color;
+    font-weight: 700;
+    font-size: 100px;
+}
+
+p {
+    color: $text-color;
+    font-family: $font-family-default;
+    line-height: 36px;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+
+.areas-of-expertise {
+    display: flex;
+    background: #000000;
+    opacity: 85%;
+    width: auto;
+    min-width: 425px;
+    height: 758px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aoe__title {
+    border-left: 4px solid $orange-color;
+    font-size: 46px;
+    line-height: 56px;
+    margin: 30px auto;
+    padding: 0 5px;
+}
+
+.card-container {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    width: 300px;
+    height: 324px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: $text-color;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+.card h2 {
+    font-family: $font-family-default;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-top: 10px;
+}
+
+.card p {
+    font-family: $font-family-default;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.odd-card {
+    background-color: $blue-color;
+}
+
+.even-card {
+    background-color: $orange-color;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.even-card img {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.even-card div {
+    width: 50%;
+    padding-left: 10px;
 }

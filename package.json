@@ -5,7 +5,7 @@
     "main": "src/index.js",
     "scripts": {
         "start": "lite-server",
-        "sass": "node-sass src/sass/main.scss dist/assets/styles/main.css -w"
+        "sass": "node-sass src/styles/main.scss dist/assets/styles/main.css -w"
     },
     "keywords": [],
     "author": "",

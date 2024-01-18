@@ -1,17 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/assets/styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="dist/assets/styles/main.css" />
     <title>Codehills</title>
-</head>
+  </head>
 
-<body>
-    <h2>Hello World! </h2>
-    <h2> Welcome to codehills website😎</h2>
-    <script src="dist/assets/scripts/main.js"></script>
-</body>
+  <body>
+    <!-- ==================== Header  ====================-->
+    <header class="header">
+        <div class="header__logo">
+          <img src="assets/images/codeland_logo.svg" alt="logo" />
+        </div>
+        <nav class="header__navigation">
+          <ul class="header__navigation-menu">
+            <li class="header__navigation-menu--item">
+              <a class="header__navigation-menu--link" href="#">Home Page</a>
+            </li>
+            <li class="header__navigation-menu--item">
+              <a class="header__navigation-menu--link" href="#">About Us</a>
+            </li>
+            <li class="header__navigation-menu--item">
+              <a class="header__navigation-menu--link" href="#">Services</a>
+            </li>
+            <li class="header__navigation-menu--item">
+              <a class="header__navigation-menu--link" href="#">Projects</a>
+            </li>
+            <li class="header__navigation-menu--item">
+              <a class="header__navigation-menu--link" href="#">Work With Us</a>
+            </li>
+            <li class="header__navigation-menu--item">
+                <a class="header__navigation-menu--link" href="#">News</a>
+            </li>
+            <li class="header__navigation-menu--item">
+                <a class="header__navigation-menu--link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__hamburger-menu">
+          <span>|||</span>
+        </button>
+    </header>
 
+    <!-- ==================== Hero Banner  ====================-->
+    <div class="hero-banner">
+        <div class="swiper-wrapper">
+            <!-- hero 01 -->
+            <div class="swiper-slide">
+                <div class="hero-banner__item">
+                    <div class="hero-banner__item--content">
+                        <h1 class="hero-banner__item--content-text">
+                            Be direct <span class="highlight highlight__primary">and transparent.​</span>
+                        </h1>
+                        <a href="#" class="hero-banner__item--content-link">see more</a>
+                    </div>
+                    <div class="hero-banner__item--image">
+                        <img src="src/assets/images/hero-banner_img_01.png" alt="hero banner" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- hero 02 -->
+            <div class="swiper-slide">
+                <div class="hero-banner__item">
+                    <div class="hero-banner__item--content">
+                        <h1 class="hero-banner__item--content-text">
+                            One team, <span class="highlight highlight__secondary">our power!​</span>
+                        </h1>
+                        <a href="#" class="hero-banner__item--content-link">see more</a>
+                    </div>
+                    <div class="hero-banner__item--image">
+                        <img src="src/assets/images/hero-banner_img_02.png" alt="hero banner" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- hero 03 -->
+            <div class="swiper-slide">
+                <div class="hero-banner__item">
+                    <div class="hero-banner__item--content">
+                        <h1 class="hero-banner__item--content-text">
+                            <span class="highlight highlight__secondary">Welcome to CodeHills​</span>
+                            where innovation meets opportunity!
+                        </h1>
+                        <a href="#" class="hero-banner__item--content-link">see more</a>
+                    </div>
+                    <div class="hero-banner__item--image">
+                        <img src="src/assets/images/hero-banner_img_03.png" alt="hero banner" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- hero 04 -->
+            <div class="swiper-slide">
+                <div class="hero-banner__item">
+                    <div class="hero-banner__item--content">
+                        <h1 class="hero-banner__item--content-text">
+                            <span class="highlight highlight__secondary">High-quality software</span>
+                            to elevate your digital experience
+                        </h1>
+                        <a href="#" class="hero-banner__item--content-link">see more</a>
+                    </div>
+                    <div class="hero-banner__item--image">
+                        <img src="src/assets/images/hero-banner_img_04.png" alt="hero banner" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/assets/scripts/main.js"></script>
+  </body>
 </html>

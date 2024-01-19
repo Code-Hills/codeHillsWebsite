@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'codehills';
+  src: url('../../icons/fonts/codehills.eot?l7bh2y');
+  src: url('../../icons/fonts/codehills.eot?l7bh2y#iefix') format('embedded-opentype'),
+    url('../../icons/fonts/codehills.ttf?l7bh2y') format('truetype'),
+    url('../../icons/fonts/codehills.woff?l7bh2y') format('woff'),
+    url('../../icons/fonts/codehills.svg?l7bh2y#codehills') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="iconCodehills-"],
+[class*=" iconCodehills-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'codehills' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 24px;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconCodehills-keyboard_arrow_up:before {
+  content: "\e900";
+}
+
+.iconCodehills-keyboard_arrow_right:before {
+  content: "\e901";
+}
+
+.iconCodehills-keyboard_arrow_left:before {
+  content: "\e902";
+}
+
+.iconCodehills-keyboard_arrow_down:before {
+  content: "\e903";
+}
+
+.iconCodehills-menu:before {
+  content: "\e904";
+}
+
+.iconCodehills-instagram:before {
+  content: "\ea92";
+}
+
+.iconCodehills-whatsapp:before {
+  content: "\ea93";
+}
+
+.iconCodehills-spotify:before {
+  content: "\ea94";
+}
+
+.iconCodehills-telegram:before {
+  content: "\ea95";
+}
+
+.iconCodehills-rss2:before {
+  content: "\ea9c";
+}
+
+.iconCodehills-youtube:before {
+  content: "\ea9d";
+}
+
+.iconCodehills-vimeo2:before {
+  content: "\eaa1";
+}
+
+.iconCodehills-github:before {
+  content: "\eab0";
+}
+
+.iconCodehills-wordpress:before {
+  content: "\eab4";
+}
+
+.iconCodehills-linkedin2:before {
+  content: "\eaca";
+}
+
+.iconCodehills-stackoverflow:before {
+  content: "\ead0";
+}

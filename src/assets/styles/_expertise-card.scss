@@ -1,72 +1,100 @@
-.areas-of-expertise {
+.expertise {
+    margin-top: 140px;
     display: flex;
-    background: $color-dark;
-    opacity: 85%;
-    width: auto;
-    min-width: 425px;
-    height: 758px;
     flex-direction: column;
     align-items: center;
-}
-
-.aoe__title {
-    color: $color-white;
-    border-left: 4px solid $color-orange;
-    font-size: 46px;
-    line-height: 56px;
-    margin: 30px auto;
-    padding: 0 5px;
-}
-
-.card-container {
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.card {
-    width: 300px;
-    height: 324px;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    color: $color-dark;
-    align-items: flex-start;
-    padding-top: 30px;
-}
-
-.card h2 {
-    font-family: $font-family-default;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36px;
-    margin-top: 10px;
-}
-
-.card p {
-    font-family: $font-family-default;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.odd-card {
-    background-color: $color-blue;
-}
-
-.even-card {
-    background-color: $color-orange;
-    margin-top: 30px;
-    margin-left: 5px;
-}
-
-.even-card img {
-    width: 50%;
-    border-radius: 5px;
-}
-
-.even-card div {
-    width: 50%;
-    padding-left: 10px;
+    background-color: $color-dark-white;
+    overflow: hidden;
+    position: relative;
+    .expertise-title {
+        font-family: $font-family-default;
+        color: $color-white;
+        position: relative;
+        margin-top: 111px;
+        padding-left: 20px;
+        font-size: 46px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 110px;
+        align-self: center;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(15deg);
+            width: 6px;
+            height: 90%;
+            background-color: $color-orange;
+        }
+        @media (max-width: 768px) {
+            margin-top: 60px;
+            margin-bottom: 50px;
+            font-size: 30px;
+        }
+    }
+    .expertise-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        gap: 33px;
+        margin: 0px 10px 100px 10px;
+        @media (max-width: 768px) {
+            margin: 0px 10px 50px 10px;
+        }
+    }
+    .area {
+        font-family: $font-family-default;
+        padding: 42px;
+        width: 250px;
+        height: 284px;
+        border-radius: 20px;
+        z-index: 2;
+        @media (max-width: 768px) {
+            padding: 21px;
+            width: 240px;
+            height: 274px;
+            margin: 0;
+        }
+    }
+    .area svg {
+        margin-bottom: 18px;
+        height: 48px;
+        width: 54px;
+    }
+    .area h2 {
+        color: $color-dark-white;
+        font-family: $font-family-default;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .area p {
+        color: $color-dark-white;
+        font-family: $font-family-default;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .area-odd {
+        background: $color-blue;
+        margin: 0px 0px 0px 15px;
+    }
+    .area-even {
+        background: $color-orange;
+        margin-top: 30px;
+        @media (max-width: 768px) {
+            margin: 0px 0px 0px 100px;
+        }
+    }
+    .curved-lines {
+        position: absolute;
+        right: 0%;
+        height: 1004px;
+        @media (max-width: 768px) {
+            top: 35%;
+            height: 55%;
+            right: -120%;
+        }
+    }
 }

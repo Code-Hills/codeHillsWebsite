@@ -382,77 +382,115 @@ h6 {
   margin: 0px 11px 11px 26px;
 }
 
-.areas-of-expertise {
-  display: none;
-  background: #000000;
-  opacity: 85%;
-  width: auto;
-  width: 100%;
-  height: 758px;
+.expertise {
+  margin-top: 140px;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #232B2F;
+  overflow: hidden;
+  position: relative;
 }
-
-.aoe__title {
+.expertise .expertise-title {
+  font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
-  border-left: 4px solid #ED8E00;
+  position: relative;
+  margin-top: 111px;
+  padding-left: 20px;
   font-size: 46px;
-  line-height: 56px;
-  margin: 30px auto;
-  padding: 0 5px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 110px;
+  align-self: center;
 }
-
-.card-container {
+.expertise .expertise-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(15deg);
+  width: 6px;
+  height: 90%;
+  background-color: #ED8E00;
+}
+@media (max-width: 768px) {
+  .expertise .expertise-title {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+}
+.expertise .expertise-container {
   display: flex;
-  align-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  flex-shrink: 0;
+  gap: 33px;
+  margin: 0px 10px 100px 10px;
 }
-
-.card {
-  width: 300px;
-  height: 324px;
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  color: #000000;
-  align-items: flex-start;
-  padding-top: 30px;
+@media (max-width: 768px) {
+  .expertise .expertise-container {
+    margin: 0px 10px 50px 10px;
+  }
 }
-
-.card h2 {
+.expertise .area {
+  font-family: "Montserrat", sans-serif;
+  padding: 42px;
+  width: 250px;
+  height: 284px;
+  border-radius: 20px;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .expertise .area {
+    padding: 21px;
+    width: 240px;
+    height: 274px;
+    margin: 0;
+  }
+}
+.expertise .area svg {
+  margin-bottom: 18px;
+  height: 48px;
+  width: 54px;
+}
+.expertise .area h2 {
+  color: #232B2F;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 700;
-  line-height: 36px;
-  margin-top: 10px;
+  line-height: normal;
 }
-
-.card p {
+.expertise .area p {
+  color: #232B2F;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
 }
-
-.odd-card {
-  background-color: #AACEDE;
+.expertise .area-odd {
+  background: #AACEDE;
+  margin: 0px 0px 0px 15px;
 }
-
-.even-card {
-  background-color: #ED8E00;
+.expertise .area-even {
+  background: #ED8E00;
   margin-top: 30px;
-  margin-left: 5px;
 }
-
-.even-card img {
-  width: 50%;
-  border-radius: 5px;
+@media (max-width: 768px) {
+  .expertise .area-even {
+    margin: 0px 0px 0px 100px;
+  }
 }
-
-.even-card div {
-  width: 50%;
-  padding-left: 10px;
+.expertise .curved-lines {
+  position: absolute;
+  right: 0%;
+  height: 1004px;
+}
+@media (max-width: 768px) {
+  .expertise .curved-lines {
+    top: 35%;
+    height: 55%;
+    right: -120%;
+  }
 }
 
 /* Styles */

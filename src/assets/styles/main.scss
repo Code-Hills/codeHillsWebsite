@@ -1,21 +1,10 @@
 /* src/sass/main.scss */
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 @import './variables';
 @import './typography';
 @import './utilities';
 @import './icons';
-@import './header';
-@import './hero-banner';
-@import './support';
-@import './expertise-card';
-@import './our-sisters';
-@import './footer';
-
-/* Styles */
-
-body {
-    font-family: $font-family-default;
-    margin: 0;
-    padding: 0;
-    background-color: $color-white;
-}
+@import './home';
+@import './slideshow';

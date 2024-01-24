@@ -1,36 +1,5 @@
-.highlight {
-    display: inline;
-    position: relative;
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 96%;
-        height: 20px;
-        background-color: $color-white;
-        z-index: -1;
-    }
-
-    @media screen and (max-width: 1024px) {
-        &::after {
-            bottom: 1px;
-        }
-    }
-
-    &__primary {
-        &::after {
-            background-color: $color-blue;
-        }
-    }
-
-    &__secondary {
-        &::after {
-            background-color: $color-orange;
-        }
-    }
+.align-center {
+    text-align: center;
 }
 
 .img-class {
@@ -38,6 +7,10 @@
     height: 100%;
 }
 
-.noCssView {
+.show {
+    display: block;
+}
+
+.hide {
     display: none;
 }

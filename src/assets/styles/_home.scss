@@ -1,0 +1,1023 @@
+.coming-soon-container {
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding-left: 35px;
+  color: $color-white;
+  font-weight: bold;
+  overflow: hidden;
+  background: transparent;
+  z-index: 1;
+  position: relative;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewport="0 0 48 48"><circle cx="24" cy="24" r="24" fill="lightgreen" fill-opacity="0.7" /></svg>'), auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust color and opacity as needed */
+    z-index: -1;
+    margin: -10px;
+  }
+
+  .content-area {
+    position: relative;
+    color: $color-white;
+    max-width: 60%;
+    height: 600px;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+
+    .brand-name {
+      font-weight: bold;
+      padding-left: 82px;
+      margin-top: 20px;
+      transition: color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+
+    .welcome__text {
+      font-size: 28px;
+      margin-top: 35px;
+      padding-top: 30px;
+      padding-left: 25px;
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+
+    .first__paragraph, .second__paragraph {
+      font-family: $font-family-default;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.2px;
+      padding-left: 25px;
+
+      &:hover {
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewport="0 0 96 96"><circle cx="48" cy="48" r="48" fill="lightgreen" fill-opacity="0.7" /></svg>'), auto;
+        transform: scale(1.01);
+      }
+    }
+
+    .first__paragraph {
+      margin-top: 25px;
+    }
+
+    .second__paragraph {
+      margin-top: 25px;
+    }
+
+    .launching-soon {
+      font-family: $font-family-default;
+      font-size: 40px;
+      font-style: italic;
+      font-weight: 600;
+      line-height: normal;
+      padding-left: 25px;
+      margin-top: 45px;
+
+      &:hover {
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewport="0 0 96 96"><circle cx="48" cy="48" r="48" fill="lightgreen" fill-opacity="0.7" /></svg>'), auto;
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  .contact-info {
+    position: relative;
+    width: 850px;
+    height: 850px;
+    bottom: 40%;
+    left: 60%;
+    border-radius: 50%;
+    background-color: $primary-color;
+    &:hover {
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewport="0 0 48 48"><circle cx="24" cy="24" r="24" fill="black" fill-opacity="0.7" /></svg>'), auto;
+    }
+    .company-address {
+      top: 33%;
+      left: 5%;
+      height: 100px;
+      background: $primary-color;
+      justify-content: space-between;
+      position: absolute;
+      display: flex;
+      gap: 14px;
+      flex-direction: column;
+      color: $color-dark;
+      text-decoration: none;
+
+      .logo {
+        background: $primary-color;
+        display: flex;
+        align-items: center;
+
+        svg {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+        }
+      }
+
+      a , p, svg {
+        background: $primary-color;
+        color: $color-dark;
+        font-family: $font-family-default;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+        text-decoration-line: underline;
+
+        &:hover {
+          transform: scale(1.01);
+        }
+      }
+    }
+  }
+
+  .graphic {
+    position: absolute;
+    top: -5%;
+    right: 28%;
+    background: transparent;
+    background-size: contain;
+
+    svg {
+        background: transparent;
+        width: 400px;
+        height: 400px;
+      }
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1600px) and (max-height: 1050px) {
+  .coming-soon-container {
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding-left: 35px;
+  color: $color-white;
+  font-weight: bold;
+  overflow: hidden;
+  background: transparent;
+  z-index: 1;
+  position: relative;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewport="0 0 48 48"><circle cx="24" cy="24" r="24" fill="lightgreen" fill-opacity="0.7" /></svg>'), auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust color and opacity as needed */
+    z-index: -1;
+    margin: -10px;
+  }
+
+  .content-area {
+    position: relative;
+    color: $color-white;
+    max-width: 60%;
+    height: 600px;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+
+    .brand-name {
+      font-weight: bold;
+      padding-left: 42px;
+      transition: color 0.3s ease, transform 0.3s ease;
+
+      svg {
+          width: 400px;
+          height: 145px;
+        }
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+
+    .welcome__text {
+      font-size: 40px;
+      padding-top: 60px;
+      padding-left: 25px;
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+
+    .first__paragraph, .second__paragraph {
+      font-family: $font-family-default;
+      font-size: 28px;
+      letter-spacing: 1.3;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.1px;
+      padding-left: 25px;
+
+      &:hover {
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewport="0 0 96 96"><circle cx="48" cy="48" r="48" fill="lightgreen" fill-opacity="0.7" /></svg>'), auto;
+        transform: scale(1.01);
+      }
+    }
+
+    .first__paragraph {
+      margin-top: 25px;
+    }
+
+    .second__paragraph {
+      margin-top: 30px;
+    }
+
+    .launching-soon {
+      font-family: $font-family-default;
+      font-size: 62px;
+      font-style: italic;
+      font-weight: 600;
+      line-height: normal;
+      padding-left: 35px;
+      margin-top: 55px;
+
+      &:hover {
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewport="0 0 96 96"><circle cx="48" cy="48" r="48" fill="lightgreen" fill-opacity="0.7" /></svg>'), auto;
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  .contact-info {
+    position: relative;
+    width: 1000px;
+    height: 850px;
+    bottom: 25%;
+    left: 55%;
+    border-radius: 50%;
+    background-color: $primary-color;
+    &:hover {
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewport="0 0 48 48"><circle cx="24" cy="24" r="24" fill="black" fill-opacity="0.7" /></svg>'), auto;
+    }
+    .company-address {
+      top: 38%;
+      left: 2%;
+      height: 150px;
+      background: $primary-color;
+      justify-content: space-between;
+      position: absolute;
+      display: flex;
+      gap: 18px;
+      flex-direction: column;
+      color: $color-dark;
+      text-decoration: none;
+
+      .logo {
+        background: $primary-color;
+        display: flex;
+        align-items: center;
+
+        svg {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+        }
+      }
+
+      a , p, svg {
+        background: $primary-color;
+        color: $color-dark;
+        font-family: $font-family-default;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+        text-decoration-line: underline;
+
+        &:hover {
+          transform: scale(1.01);
+        }
+      }
+    }
+  }
+
+  .graphic {
+    position: absolute;
+    top: -5%;
+    right: 36%;
+    background: transparent;
+    background-size: contain;
+
+    svg {
+        background: transparent;
+        width: 380px;
+        height: 420px;
+      }
+  }
+}
+}
+
+@media (min-width: 1440px) and (max-width: 1600px) {
+  .coming-soon-container {
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding-left: 35px;
+  color: $color-white;
+  font-weight: bold;
+  overflow: hidden;
+  background: transparent;
+  z-index: 1;
+  position: relative;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewport="0 0 48 48"><circle cx="24" cy="24" r="24" fill="lightgreen" fill-opacity="0.7" /></svg>'), auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust color and opacity as needed */
+    z-index: -1;
+    margin: -10px;
+  }
+
+  .content-area {
+    position: relative;
+    color: $color-white;
+    max-width: 60%;
+    height: 600px;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+
+    .brand-name {
+      font-weight: bold;
+      padding-left: 42px;
+      transition: color 0.3s ease, transform 0.3s ease;
+
+      svg {
+          width: 370px;
+          height: 85px;
+        }
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+
+    .welcome__text {
+      font-size: 36px;
+      padding-top: 40px;
+      padding-left: 25px;
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+
+    .first__paragraph, .second__paragraph {
+      font-family: $font-family-default;
+      font-size: 24px;
+      letter-spacing: 1.3;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.1px;
+      padding-left: 25px;
+
+      &:hover {
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewport="0 0 96 96"><circle cx="48" cy="48" r="48" fill="lightgreen" fill-opacity="0.7" /></svg>'), auto;
+        transform: scale(1.01);
+      }
+    }
+
+    .first__paragraph {
+      margin-top: 25px;
+    }
+
+    .second__paragraph {
+      margin-top: 30px;
+    }
+
+    .launching-soon {
+      font-family: $font-family-default;
+      font-size: 52px;
+      font-style: italic;
+      font-weight: 600;
+      line-height: normal;
+      padding-left: 35px;
+      margin-top: 35px;
+
+      &:hover {
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewport="0 0 96 96"><circle cx="48" cy="48" r="48" fill="lightgreen" fill-opacity="0.7" /></svg>'), auto;
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  .contact-info {
+    position: relative;
+    width: 1000px;
+    height: 850px;
+    bottom: 50%;
+    left: 55%;
+    border-radius: 50%;
+    background-color: $primary-color;
+    &:hover {
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewport="0 0 48 48"><circle cx="24" cy="24" r="24" fill="black" fill-opacity="0.7" /></svg>'), auto;
+    }
+    .company-address {
+      top: 38%;
+      left: 2%;
+      height: 150px;
+      background: $primary-color;
+      justify-content: space-between;
+      position: absolute;
+      display: flex;
+      gap: 14px;
+      flex-direction: column;
+      color: $color-dark;
+      text-decoration: none;
+
+      .logo {
+        background: $primary-color;
+        display: flex;
+        align-items: center;
+
+        svg {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+        }
+      }
+
+      a , p, svg {
+        background: $primary-color;
+        color: $color-dark;
+        font-family: $font-family-default;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+        text-decoration-line: underline;
+
+        &:hover {
+          transform: scale(1.01);
+        }
+      }
+    }
+  }
+
+  .graphic {
+    position: absolute;
+    top: -8%;
+    right: 32%;
+    background: transparent;
+    background-size: contain;
+
+    svg {
+        background: transparent;
+        width: 400px;
+        height: 480px;
+      }
+  }
+}
+}
+
+@media (min-width: 1601px) {
+  .coming-soon-container {
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding-left: 35px;
+  color: $color-white;
+  font-weight: bold;
+  overflow: hidden;
+  background: transparent;
+  z-index: 1;
+  position: relative;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewport="0 0 48 48"><circle cx="24" cy="24" r="24" fill="lightgreen" fill-opacity="0.7" /></svg>'), auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust color and opacity as needed */
+    z-index: -1;
+    margin: -10px;
+  }
+
+  .content-area {
+    position: relative;
+    color: $color-white;
+    max-width: 60%;
+    height: 600px;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+
+    .brand-name {
+      font-weight: bold;
+      padding-left: 82px;
+      transition: color 0.3s ease, transform 0.3s ease;
+
+      svg {
+          width: 450px;
+          height: 185px;
+        }
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+
+    .welcome__text {
+      font-size: 50px;
+      padding-top: 80px;
+      padding-left: 25px;
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+
+    .first__paragraph, .second__paragraph {
+      font-family: $font-family-default;
+      font-size: 36px;
+      letter-spacing: 1.2;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.2px;
+      padding-left: 25px;
+
+      &:hover {
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewport="0 0 96 96"><circle cx="48" cy="48" r="48" fill="lightgreen" fill-opacity="0.7" /></svg>'), auto;
+        transform: scale(1.01);
+      }
+    }
+
+    .first__paragraph {
+      margin-top: 25px;
+    }
+
+    .second__paragraph {
+      margin-top: 45px;
+    }
+
+    .launching-soon {
+      font-family: $font-family-default;
+      font-size: 62px;
+      font-style: italic;
+      font-weight: 600;
+      line-height: normal;
+      padding-left: 65px;
+      margin-top: 85px;
+
+      &:hover {
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewport="0 0 96 96"><circle cx="48" cy="48" r="48" fill="lightgreen" fill-opacity="0.7" /></svg>'), auto;
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  .contact-info {
+    position: relative;
+    width: 1200px;
+    height: 1050px;
+    bottom: 15%;
+    left: 60%;
+    border-radius: 50%;
+    background-color: $primary-color;
+    &:hover {
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewport="0 0 48 48"><circle cx="24" cy="24" r="24" fill="black" fill-opacity="0.7" /></svg>'), auto;
+    }
+    .company-address {
+      top: 42%;
+      left: 2%;
+      height: 150px;
+      background: $primary-color;
+      justify-content: space-between;
+      position: absolute;
+      display: flex;
+      gap: 21px;
+      flex-direction: column;
+      color: $color-dark;
+      text-decoration: none;
+
+      .logo {
+        background: $primary-color;
+        display: flex;
+        align-items: center;
+
+        svg {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+        }
+      }
+
+      a , p, svg {
+        background: $primary-color;
+        color: $color-dark;
+        font-family: $font-family-default;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+        text-decoration-line: underline;
+
+        &:hover {
+          transform: scale(1.01);
+        }
+      }
+    }
+  }
+
+  .graphic {
+    position: absolute;
+    top: -5%;
+    right: 36%;
+    background: transparent;
+    background-size: contain;
+
+    svg {
+        background: transparent;
+        width: 500px;
+        height: 600px;
+      }
+  }
+}
+}
+
+@media (max-width: 768px) {
+  .coming-soon-container {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+
+    .content-area {
+      max-width: unset;
+      width: 100%;
+      height: 480px;
+
+      .welcome__text {
+       font-size: 24px;
+       padding-top: 10px;
+       transform: scale(1.03);
+      }
+
+      .brand-name {
+        font-weight: bold;
+        padding: 0px;
+        svg {
+          width: 200px;
+          height: 75px;
+        }
+      }
+
+      .first__paragraph, .second__paragraph {
+        transform: scale(1.03);
+        padding: 0px 10px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: normal;
+      }
+
+      .second__paragraph {
+        margin-top: 15px;
+      }
+
+      .launching-soon {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: normal;
+        padding-left: 25px;
+        margin-top: 25px;
+        transform: scale(1.03);
+
+        &:hover {
+          transform: scale(1.01);
+        }
+      }
+    }
+
+    .contact-info {
+      width: 800px;
+      height: 650px;
+      bottom: 10%;
+      left: -25%;
+      .company-address {
+        top: 35%;
+        left: 17%;
+        height: 80px;
+        text-decoration: none;
+        gap: 15px;
+
+        .logo {
+          background: $primary-color;
+          display: flex;
+          align-items: center;
+
+          svg {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+          }
+        }
+
+        a , p, svg {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          cursor: pointer;
+          text-decoration-line: underline;
+        }
+      }
+    }
+
+    .graphic {
+      top: -3%;
+      right: 17%;
+
+      svg {
+          width: 320px;
+          height: 300px;
+        }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .coming-soon-container {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+
+    .content-area {
+      max-width: unset;
+      width: 100%;
+      height: 450px;
+
+      .welcome__text {
+       font-size: 20px;
+       margin-top: 15px;
+       padding-top: 30px;
+       padding-left: 5px;
+       transform: scale(1.03);
+      }
+
+      .welcome__text {
+        font-size: 26px;
+        margin: 0px;
+        padding: 25px 0px 10px 0px;
+        transform: scale(1.03);
+      }
+
+      .brand-name {
+        font-weight: bold;
+        svg {
+          width: 195px;
+          height: 60px;
+        }
+      }
+
+      .first__paragraph, .second__paragraph {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: normal;
+        padding: 10px 10px;
+        margin: 0;
+      }
+
+      .second__paragraph {
+        margin-top: 10px;
+      }
+
+      .launching-soon {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+        padding-left: 25px;
+        margin-top: 15px;
+
+        &:hover {
+          transform: scale(1.01);
+        }
+      }
+    }
+
+    .contact-info {
+      width: 730px;
+      height: 730px;
+      bottom: 0%;
+      left: -35%;
+      bottom: 10%;
+      .company-address {
+        top: 33%;
+        left: 22%;
+        gap: 5px;
+
+        .logo {
+          background: $primary-color;
+          display: flex;
+          align-items: center;
+
+          svg {
+            width: 20px;
+            height: 30px;
+            margin-right: 10px;
+          }
+        }
+
+        a , p, svg {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          cursor: pointer;
+          text-decoration-line: underline;
+        }
+      }
+    }
+
+    .graphic {
+      top: -5%;
+      right: 20%;
+
+      svg {
+          width: 300px;
+          height: 320px;
+        }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .coming-soon-container {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+
+    .content-area {
+      max-width: unset;
+      width: 100%;
+      height: 450px;
+
+      .welcome__text {
+        font-size: 22px;
+        margin: 0px;
+        padding: 20px 0px 0px 0px;
+        transform: scale(1.03);
+      }
+
+      .brand-name {
+        font-weight: bold;
+        svg {
+          width: 165px;
+          height: 60px;
+        }
+      }
+
+      .first__paragraph, .second__paragraph {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: normal;
+        padding: 0px 10px;
+        margin: 0;
+      }
+
+      .second__paragraph {
+        margin-top: 10px;
+      }
+
+      .launching-soon {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+        padding-left: 25px;
+        margin-top: 15px;
+
+        &:hover {
+          transform: scale(1.01);
+        }
+      }
+    }
+
+    .contact-info {
+      width: 730px;
+      height: 730px;
+      bottom: 0%;
+      left: -45%;
+      bottom: 15%;
+      .company-address {
+        top: 28%;
+        left: 25%;
+        gap: 5px;
+
+        .logo {
+          background: $primary-color;
+          display: flex;
+          align-items: center;
+
+          svg {
+            width: 20px;
+            height: 30px;
+            margin-right: 10px;
+          }
+        }
+
+        a , p, svg {
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          cursor: pointer;
+          text-decoration-line: underline;
+        }
+      }
+    }
+
+    .graphic {
+      top: -5%;
+      right: 22%;
+
+      svg {
+          width: 280px;
+          height: 280px;
+        }
+    }
+  }
+}

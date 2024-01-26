@@ -27,66 +27,60 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.iconCodehills-keyboard_arrow_up:before {
-  content: "\e900";
+.iconCodehills-envelope:before {
+  content: "\e905";
 }
-
-.iconCodehills-keyboard_arrow_right:before {
-  content: "\e901";
+.iconCodehills-location:before {
+  content: "\e947";
 }
-
-.iconCodehills-keyboard_arrow_left:before {
-  content: "\e902";
-}
-
-.iconCodehills-keyboard_arrow_down:before {
-  content: "\e903";
-}
-
-.iconCodehills-menu:before {
-  content: "\e904";
-}
-
 .iconCodehills-instagram:before {
   content: "\ea92";
 }
-
 .iconCodehills-whatsapp:before {
   content: "\ea93";
 }
-
 .iconCodehills-spotify:before {
   content: "\ea94";
 }
-
 .iconCodehills-telegram:before {
   content: "\ea95";
 }
-
 .iconCodehills-rss2:before {
   content: "\ea9c";
 }
-
 .iconCodehills-youtube:before {
   content: "\ea9d";
 }
-
 .iconCodehills-vimeo2:before {
   content: "\eaa1";
 }
-
 .iconCodehills-github:before {
   content: "\eab0";
 }
-
 .iconCodehills-wordpress:before {
   content: "\eab4";
 }
-
+.iconCodehills-linkedin:before {
+  content: "\eac9";
+}
 .iconCodehills-linkedin2:before {
   content: "\eaca";
 }
-
 .iconCodehills-stackoverflow:before {
   content: "\ead0";
+}
+.iconCodehills-keyboard_arrow_up:before {
+  content: "\e900";
+}
+.iconCodehills-keyboard_arrow_right:before {
+  content: "\e901";
+}
+.iconCodehills-keyboard_arrow_left:before {
+  content: "\e902";
+}
+.iconCodehills-keyboard_arrow_down:before {
+  content: "\e903";
+}
+.iconCodehills-menu:before {
+  content: "\e904";
 }

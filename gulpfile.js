@@ -23,4 +23,6 @@ gulp.task('watch', function () {
     gulp.watch('src/assets/js/*.js').on('change', browserSync.reload);
 });
 
+gulp.task('build', gulp.series('sass'));
+
 gulp.task('default', gulp.series('sass', 'watch'));

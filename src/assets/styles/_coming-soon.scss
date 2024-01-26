@@ -6,6 +6,8 @@
     overflow: hidden;
     background: #fff;
 
+    $self: &;
+
     &__slideShow {
         position: relative;
 
@@ -249,6 +251,134 @@
 
             &--graphic {
                 top: -20px;
+            }
+        }
+    }
+
+    //handle landscape mode
+    @media screen and (max-width:1024px) {
+        &--landscape {
+            #{$self}__content {
+                top: 20px;
+                transform: none;
+
+                &--welcome {
+                    margin-bottom: 20px;
+
+                    &-title {
+                        font-size: 30px;
+                    }
+
+                    &-logo {
+                        width: 200px;
+                        height: 50px;
+                        margin-left: 20px;
+                    }
+                }
+
+                &--description {
+                    margin-bottom: 10px;
+
+                    &-text {
+                        font-size: 14px;
+                    }
+                }
+
+                &--launching-soon {
+                    font-size: 16px;
+                }
+            }
+
+            #{$self}__contact-info {
+                right: calc(-1 * var(--screen-height) / 2);
+                bottom: calc(-1 * var(--screen-height) / 2);
+                width: calc(var(--screen-height) + 100px);
+                height: calc(var(--screen-height) + 100px);
+                padding: 5px;
+
+                &--list {
+                    left: 20px;
+                    transform: translateY(-50%);
+                }
+
+                &--text {
+                    font-size: 14px;
+                }
+
+                &--icon {
+                    font-size: 18px;
+                }
+
+                &--graphic {
+                    top: 20px;
+                    right: 50%;
+                    transform: translateX(calc(50% - 20px));
+                    width: var(--screen-height);
+                    height: calc(var(--screen-height) / 2);
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        &--landscape {
+            #{$self}__content {
+                max-width: 55%;
+
+                &--welcome {
+                    &-title {
+                        font-size: 20px;
+                    }
+
+                    &-logo {
+                        width: 100px;
+                        height: 40px;
+                        margin-left: 10px;
+                    }
+                }
+
+                &--description {
+                    &-text {
+                        font-size: 12px;
+                    }
+                }
+
+                &--launching-soon {
+                    font-size: 14px;
+                }
+            }
+
+            #{$self}__contact-info {
+                right: -10px;
+                bottom: -10px;
+                width: calc(var(--screen-width) - 100px);
+                height: calc(var(--screen-width) - 100px);
+
+                &--list {
+                    left: 20px;
+                    transform: translateY(calc(-50% - 50px));
+
+                    &-item {
+                        display: inline-block;
+
+                        &:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                &--text {
+                    font-size: 12px;
+                }
+
+                &--icon {
+                    font-size: 14px;
+                }
+
+                &--graphic {
+                    transform: translateX(calc(50% - 45px));
+                }
             }
         }
     }

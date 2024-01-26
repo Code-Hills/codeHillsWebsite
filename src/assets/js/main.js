@@ -5,7 +5,7 @@ function appendSlideShowImages() {
 
     const imagesFilesNames = [
         "codehills-img_1.jpg",
-        "codehills-img_3.jpg",
+        "codehills-img_3.png",
         "codehills-img_4.jpg",
         "codehills-img_6.jpg",
         "codehills-img_7.jpg",
@@ -66,9 +66,21 @@ function getScreenWidth() {
         `${window.innerWidth}px`
     );
 }
+function getScreenHeight() {
+    document.documentElement.style.setProperty(
+        "--screen-height",
+        `${window.innerHeight}px`
+    );
+}
 
-function isLandScape() {
-    return window.matchMedia("(orientation: landscape)").matches;
+function checkLandscapeMode() {
+    const isLandscape = window.matchMedia('(orientation: landscape)').matches && window.matchMedia('(pointer:coarse)').matches;
+
+    if(isLandscape) {
+        document.querySelector('.coming-soon').classList.add('coming-soon--landscape');
+    } else {
+        document.querySelector('.coming-soon').classList.remove('coming-soon--landscape');
+    }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -76,8 +88,18 @@ document.addEventListener("DOMContentLoaded", () => {
     initSlideShow();
     initDotsAnimation();
     getScreenWidth();
+    getScreenHeight();
+    checkLandscapeMode();
 });
 
 window.addEventListener("resize", () => {
     getScreenWidth();
+    getScreenHeight();
+    checkLandscapeMode();
+});
+
+window.addEventListener("orientationchange", () => {
+    getScreenWidth();
+    getScreenHeight();
+    checkLandscapeMode();
 });

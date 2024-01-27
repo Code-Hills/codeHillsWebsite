@@ -7,14 +7,11 @@ function appendSlideShowImages() {
         "codehills-img_1.jpg",
         "codehills-img_3.png",
         "codehills-img_4.jpg",
-        "codehills-img_6.jpg",
         "codehills-img_7.jpg",
         "codehills-img_8.jpg",
         "codehills-img_9.jpg",
-        "codehills-img_10.jpg",
         "codehills-img_11.jpg",
         "codehills-img_12.jpg",
-        "codehills-img_13.jpg",
     ];
 
     const imagesPath = "assets/images/";
@@ -22,6 +19,7 @@ function appendSlideShowImages() {
     imagesFilesNames.forEach((imageFileName) => {
         const image = new Image();
         image.src = imagesPath + imageFileName;
+        image.setAttribute("loading", "lazy");
         image.alt = "Codehills-" + imageFileName;
         image.classList.add("coming-soon__slideShow--slide-image");
         imagesArray.push(image);
@@ -30,11 +28,14 @@ function appendSlideShowImages() {
     const swiperWrapper = document.querySelector(".swiper-wrapper");
     imagesArray.forEach((image) => {
         const swiperSlide = document.createElement("div");
+        const swiperPreloader = document.createElement("div");
+        swiperPreloader.classList.add("swiper-lazy-preloader");
         swiperSlide.classList.add(
-            "coming-soon__slideShow--slide-image",
+            "coming-soon__slideShow--slide",
             "swiper-slide"
         );
         swiperSlide.appendChild(image);
+        swiperSlide.appendChild(swiperPreloader);
         swiperWrapper.appendChild(swiperSlide);
     });
 }
@@ -42,6 +43,7 @@ function appendSlideShowImages() {
 function initSlideShow() {
     const swiper = new Swiper(".swiper", {
         loop: true,
+        lazy: true,
         effect: "fade",
         autoplay: {
             delay: 5000,

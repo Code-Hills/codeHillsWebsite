@@ -17,7 +17,12 @@ function appendSlideShowImages() {
 
   imagesFilesNames.forEach((imageFileName) => {
     const image = new Image();
-    image.setAttribute("data-src", imagesPath + imageFileName);
+    // add data-src attribute only for other images than first one
+    if (imageFileName !== imagesFilesNames[0]) {
+      image.setAttribute("data-src", imagesPath + imageFileName);
+    } else {
+      image.setAttribute("src", imagesPath + imageFileName);
+    }
     image.alt = "Codehills-" + imageFileName;
     image.classList.add("coming-soon__slideShow--slide-image");
     imagesArray.push(image);
@@ -54,7 +59,8 @@ function initSlideShow() {
 
   slides[currentSlide].classList.add("coming-soon__slideShow--slide-active");
 
-  lazyLoadImage(slides[currentSlide].querySelector("img"));
+  // lazy load image next to current slide
+  lazyLoadImage(slides[(currentSlide + 1) % slides.length].querySelector("img"));
 
   setInterval(() => {
     slides[currentSlide].classList.remove(
@@ -63,6 +69,8 @@ function initSlideShow() {
     currentSlide = (currentSlide + 1) % slides.length;
     slides[currentSlide].classList.add("coming-soon__slideShow--slide-active");
     lazyLoadImage(slides[currentSlide].querySelector("img"));
+    // load next image
+    lazyLoadImage(slides[(currentSlide + 1) % slides.length].querySelector("img"));
   }, 5000);
 }
 

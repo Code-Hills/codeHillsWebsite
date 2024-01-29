@@ -8,7 +8,6 @@ function appendSlideShowImages() {
         "codehills-img_3.png",
         "codehills-img_4.jpg",
         "codehills-img_7.jpg",
-        "codehills-img_8.jpg",
         "codehills-img_9.jpg",
         "codehills-img_11.jpg",
         "codehills-img_12.jpg",
@@ -44,7 +43,6 @@ function initSlideShow() {
     const swiper = new Swiper(".swiper", {
         loop: true,
         lazy: true,
-        effect: "fade",
         autoplay: {
             delay: 5000,
         },

@@ -165,14 +165,25 @@ h6 {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.35);
   z-index: 5;
 }
 .coming-soon__slideShow--wrapper {
   position: relative;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+}
+.coming-soon__slideShow--slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.coming-soon__slideShow--slide-active {
+  opacity: 1;
 }
 .coming-soon__slideShow--slide-image {
   height: 100%;
@@ -362,6 +373,106 @@ h6 {
   }
   .coming-soon__contact-info--graphic {
     top: -20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .coming-soon--landscape .coming-soon__content {
+    top: 20px;
+    transform: none;
+  }
+  .coming-soon--landscape .coming-soon__content--welcome {
+    margin-bottom: 20px;
+  }
+  .coming-soon--landscape .coming-soon__content--welcome-title {
+    font-size: 30px;
+  }
+  .coming-soon--landscape .coming-soon__content--welcome-logo {
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
+  }
+  .coming-soon--landscape .coming-soon__content--description {
+    margin-bottom: 10px;
+  }
+  .coming-soon--landscape .coming-soon__content--description-text {
+    font-size: 14px;
+  }
+  .coming-soon--landscape .coming-soon__content--launching-soon {
+    font-size: 16px;
+  }
+  .coming-soon--landscape .coming-soon__contact-info {
+    right: calc(-1 * var(--screen-height) / 2);
+    bottom: calc(-1 * var(--screen-height) / 2);
+    width: calc(var(--screen-height) + 100px);
+    height: calc(var(--screen-height) + 100px);
+    padding: 5px;
+  }
+  .coming-soon--landscape .coming-soon__contact-info--list {
+    left: 20px;
+    transform: translateY(-50%);
+  }
+  .coming-soon--landscape .coming-soon__contact-info--text {
+    font-size: 14px;
+  }
+  .coming-soon--landscape .coming-soon__contact-info--icon {
+    font-size: 18px;
+  }
+  .coming-soon--landscape .coming-soon__contact-info--graphic {
+    top: 20px;
+    right: 50%;
+    transform: translateX(calc(50% - 20px));
+    width: var(--screen-height);
+    height: calc(var(--screen-height) / 2);
+    opacity: 0.8;
+  }
+}
+@media screen and (max-width: 768px) {
+  .coming-soon--landscape .coming-soon__content {
+    top: 10px;
+    max-width: 55%;
+  }
+  .coming-soon--landscape .coming-soon__content--welcome {
+    margin-bottom: 10px;
+  }
+  .coming-soon--landscape .coming-soon__content--welcome-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .coming-soon--landscape .coming-soon__content--welcome-logo {
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  .coming-soon--landscape .coming-soon__content--description-text {
+    font-size: 12px;
+  }
+  .coming-soon--landscape .coming-soon__content--launching-soon {
+    font-size: 14px;
+  }
+  .coming-soon--landscape .coming-soon__contact-info {
+    right: -10px;
+    bottom: -10px;
+    width: calc(var(--screen-width) - 100px);
+    height: calc(var(--screen-width) - 100px);
+  }
+  .coming-soon--landscape .coming-soon__contact-info--list {
+    left: 20px;
+    transform: translateY(calc(-50% - 50px));
+  }
+  .coming-soon--landscape .coming-soon__contact-info--list-item {
+    display: inline-block;
+  }
+  .coming-soon--landscape .coming-soon__contact-info--list-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .coming-soon--landscape .coming-soon__contact-info--text {
+    font-size: 12px;
+  }
+  .coming-soon--landscape .coming-soon__contact-info--icon {
+    font-size: 14px;
+  }
+  .coming-soon--landscape .coming-soon__contact-info--graphic {
+    transform: translateX(calc(50% - 45px));
   }
 }
 
